@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+    <test verbose="2" preserve-order="true" name="Regression">
+        <groups>
+            <run>
+                <exclude name="Smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="testNg.Day1"/>
+            <class name="testNg.Day2"/>
+            <class name="testNg.Day3"/>
+        </classes>
+    </test>
+</suite>
