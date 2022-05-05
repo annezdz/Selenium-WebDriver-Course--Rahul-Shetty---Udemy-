@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Loan Department" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="testNg.Listeners"></listener>
+    </listeners>
+    <parameter name="URL" value="qaclickacademy.com"/>
+    <test verbose="2" preserve-order="true" name="Personal Loan">
+
+        <classes>
+            <class name="testNg.Day1">
+                <methods>
+                </methods>
+            </class>
+            <class name="testNg.Day2"/>
+        </classes>
+    </test>
+    <test name="Car Loan">
+        <classes>
+            <class name="testNg.Day3">
+                <methods>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Smoke">
+        <parameter name="KEY" value="BATATA"/>
+        <parameter name="URL" value="www.google.com"></parameter>
+        <classes>
+            <class name="testNg.Day4"></class>
+        </classes>
+    </test>
+</suite>
