@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import static org.openqa.selenium.support.locators.RelativeLocator.with;
 
+
 public class RelativeLocators {
     public static void main(String[] args) {
 
